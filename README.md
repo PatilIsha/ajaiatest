@@ -2,7 +2,8 @@
 
 A lightweight collaborative document editor: create and format documents, import files, share with teammates as editors or viewers, and never silently lose an edit.
 
-**Live demo:** `<LIVE_URL>` (free Render instance: the first load after idle can take ~30–50 s to wake up)
+**Live demo:** https://ajaiatest.onrender.com/ (free Render instance: the first load after idle can take ~30–50 s to wake up)
+**Source:** https://github.com/PatilIsha/ajaiatest
 
 ## Demo accounts
 

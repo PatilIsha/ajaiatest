@@ -1,6 +1,7 @@
 # Submission: AI-Native Full Stack Developer Assignment
 
-**Live app:** `<LIVE_URL>`
+**Live app:** https://ajaiatest.onrender.com/ (free tier: allow ~30–50 s for the first load after idle)
+**Source:** https://github.com/PatilIsha/ajaiatest
 **Walkthrough video:** see `VIDEO_URL.txt`
 **Demo accounts:** `alice@ajaia.test` (owner), `bob@ajaia.test` (editor), `carol@ajaia.test` (viewer). Pick one on the login screen; no password.
 
