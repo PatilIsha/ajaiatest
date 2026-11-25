@@ -1,11 +1,8 @@
 # AI workflow note
 
-> **Before you submit:** sections marked ✏️ should be checked against your own experience and edited. Everything else records what actually happened while this project was built.
-
 ## Tools used
 
-- **Claude Code** (Anthropic, running in VS Code): scaffolding, implementation, tests, running builds and smoke tests, and drafting docs.
-- ✏️ *Add any others you used (ChatGPT, Copilot, etc.), or remove this line.*
+- **Claude Code** (Anthropic, running in VS Code) was the only AI tool I used. It handled scaffolding, implementation, tests, running builds and smoke tests, and drafting the docs.
 
 ## Where AI materially sped things up
 
@@ -26,7 +23,8 @@ These came up during this build:
 - **Calls that would have triggered spurious saves.** `editor.setEditable()` and `setContent()` emit update events by default. Both calls pass `emitUpdate: false`, so loading a document never saves it back.
 - **A re-render bug in the share dialog.** Its effect depended on an inline `onClose` prop, so it re-ran (refetching users and stealing focus) on every parent render. I fixed it with a ref.
 - **Scope pushback.** I explicitly chose not to attempt real-time CRDT collaboration and built version-checked saves instead. See `ARCHITECTURE.md`, decision 3.
-- ✏️ *Add any changes you made yourself after reviewing the code or using the app.*
+
+I made no further hand edits to the code. My role was directing scope and decisions, reviewing the output, and testing the product.
 
 ## How correctness, UX, and reliability were verified
 
@@ -38,4 +36,10 @@ These came up during this build:
   - a stale save returns 409
 - **`.docx` import:** checked with a generated Word file (heading, bold, and italic preserved) and with a corrupt file (clean 422 error).
 - **Code review:** read every generated file. Several of the fixes above came from that review, not from test failures.
-- ✏️ **Manual UX pass:** *describe what you clicked through yourself, e.g. two windows as Alice and Bob, editing, sharing, viewer read-only, the conflict banner, import/insert file, mobile width.*
+- **Manual UX pass** (on the live deployment):
+  - Two browser windows signed in as Alice and Bob
+  - Sharing a document and seeing it appear under "Shared with me"
+  - View-only access for Carol (read-only editor, no toolbar)
+  - File import and insert-from-file
+  - The conflict banner, triggered by editing the same document from both windows
+  - The layout at mobile width
