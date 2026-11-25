@@ -4,6 +4,7 @@ A lightweight collaborative document editor: create and format documents, import
 
 **Live demo:** https://ajaiatest.onrender.com/ (free Render instance: the first load after idle can take ~30–50 s to wake up)
 **Source:** https://github.com/PatilIsha/ajaiatest
+**Walkthrough video:** https://drive.google.com/file/d/14HrNXnpKyFakVoMVklgRRZx1oOkj1crk/view?usp=sharing
 
 ## Demo accounts
 
